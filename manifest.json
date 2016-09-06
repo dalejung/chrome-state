@@ -9,7 +9,7 @@
     }
   ],
   "background": {
-    "scripts": ["background.js"],
+    "scripts": ["background.js", "window_title_bg.js"],
     "persistent": true
   },
   "permissions": [

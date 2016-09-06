@@ -1,4 +1,14 @@
 /*
+ *
+ * TODO
+ *
+ * 1. Write a function to create a current manifest of all tabs/urls/windows.
+ * 2. Write a system that keeps track of history. Basically, a running list of
+ * sites I've visited.
+ * 3. Ability to persist this to FS so external things can read it.
+ */
+
+/*
  * Sites like facebook will do some JS magic and then update history state.
  * Have to use this hook to catch em.
  */
@@ -8,7 +18,6 @@ chrome.webNavigation.onHistoryStateUpdated.addListener(function(details) {
   }
   log_navigation(details);
 });
-
 
 WINDOW_EVENTS = {};
 

@@ -27,6 +27,7 @@ function log_navigation(details) {
     if (!(windowId in WINDOW_EVENTS)) {
       WINDOW_EVENTS[windowId] = [];
     }
+    details['windowId'] = windowId;
     WINDOW_EVENTS[windowId].push(details);
   });
 }

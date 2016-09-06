@@ -15,6 +15,7 @@
   "permissions": [
     "tabs",
     "webNavigation",
+    "history",
     "http://*/*",
     "https://*/*"
   ]
